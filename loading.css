@@ -10,10 +10,17 @@ body{
 
 .loading-text {
     width: 20%;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 30px;
+    max-width: 200px;
+}
+
+.loading-img {
+    width: 100%;
+    max-width: 1200px;
 }
 
 img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
