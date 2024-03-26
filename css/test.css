@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.loveMob {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.container {
+    margin: 30px 50px 30px 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 850px;
+    min-width: 500px;
+    height: 800px;
+    border-style: dotted;
+    border-radius: 10%;
+    border-color: rgb(156, 0, 130);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Gaegu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.question {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    height: 180px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.question:nth-child(2),
+.question:nth-child(3),
+.question:nth-child(4) {
+    opacity: 0.5;
+}
+
+.buttons1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.buttons .yes-button,
+.buttons .no-button,
+.buttons1 .yes-button,
+.buttons1 .no-button {
+   width: 15%;
+   min-width: 70px;
+   cursor: pointer;
+   position: relative;
+}
+
+.buttons .yes-button img,
+.buttons .no-button img,
+.buttons1 .yes-button img,
+.buttons1 .no-button img {
+   width: 100%;
+   position: absolute;
+}
+
+.buttons .yes-button .hover-yes,
+.buttons .no-button .hover-no {
+   opacity: 0;
+}
+
+.hover-yes,
+.hover-no{
+    opacity: 0;
+}
+
+.yes-button:hover .yes,
+.no-button:hover .no {
+    opacity: 0;
+}
+
+.yes-button:hover .hover-yes,
+.no-button:hover .hover-no {
+    opacity: 1;
+}
+
+.follow-text {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    color: #b8c41a;
+    pointer-events: none; /* 텍스트가 마우스 이벤트를 가로채지 않도록 합니다. */
+    z-index: 2;
+}

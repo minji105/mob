@@ -1,0 +1,131 @@
+body {
+  margin-top: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  max-width: 750px;
+  min-width: 400px;
+  max-height: 750px;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Gaegu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: x-large;
+  }
+
+  a {
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: large;
+  }
+
+  a {
+    font-size: x-large;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.restart-button {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: xxx-large;
+}
+
+.restart-button:hover {
+  color: red;
+  font-style: oblique;
+}
+
+.loveMob {
+  width: 70%;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.image-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.image-button img {
+  height: auto;
+  position: absolute;
+  transition: opacity 0.3s ease;
+
+  width: 50%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.hover-enter {
+  opacity: 0;
+}
+
+.image-button:hover .enter {
+  opacity: 0;
+}
+
+.image-button:hover .hover-enter {
+  opacity: 1;
+}
+
+.start-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.start-button img {
+  height: auto;
+  position: absolute;
+  transition: opacity 0.3s ease;
+
+  width: 50%;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.hover-start {
+  opacity: 0;
+}
+
+.start-button:hover .start {
+  opacity: 0;
+}
+
+.start-button:hover .hover-start {
+  opacity: 1;
+}
