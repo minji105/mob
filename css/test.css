@@ -9,14 +9,15 @@ body {
     width: 100%;
     max-width: 300px;
     min-width: 200px;
+    margin-top: 15px;
 }
 
 .container {
-    margin: 30px 50px 30px 50px;
+    margin: 30px 20px 30px 20px;
     padding-bottom: 50px;
-    width: 80%;
+    width: 90%;
     max-width: 850px;
-    min-width: 500px;
+    min-width: 300px;
     height: 800px;
     border-style: dotted;
     border-radius: 10%;
@@ -33,6 +34,18 @@ h3 {
     font-weight: 300;
     font-style: normal;
     font-size: x-large;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: large; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: medium; 
+    }
 }
 
 .question {
@@ -104,7 +117,7 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    color: #b8c41a;
+    color: #00e0bb;
     pointer-events: none; /* 텍스트가 마우스 이벤트를 가로채지 않도록 합니다. */
     z-index: 2;
 }
