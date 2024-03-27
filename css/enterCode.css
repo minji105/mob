@@ -1,0 +1,107 @@
+p,
+h5,
+label,
+.inputField1,
+.button1 {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: red;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20%;
+    font-size: large;
+    opacity: 0;
+}
+
+.goTest {
+    cursor: pointer;
+    color: #00e0e0;
+}
+
+.goTest:hover {
+    font-weight: bolder;
+}
+
+h5 {
+    line-height: 1.618em;
+    color: rgb(202, 202, 202);
+    margin: 0;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+  color: inherit;
+}
+
+.mob-face {
+    width: 100%;
+    max-width: 100px;
+    min-width: 50px;
+    margin-bottom: 20%;
+}
+
+label {
+    color: white;
+    font-size: xxx-large;
+}
+
+.inputField1 {
+    height: 30px;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+.button1 {
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    cursor: pointer;
+    height: 40px;
+}
+
+@media screen and (max-width: 400px) {
+
+    label,
+    .inputField1,
+    .button1 {
+        font-size: large;
+    }
+
+    h5, a {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+    }
+
+}
+
+.button1:hover {
+    color: rgb(255, 0, 212);
+}

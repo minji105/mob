@@ -10,14 +10,14 @@ body {
 
 .main {
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     min-width: 400px;
     max-height: 750px;
+    margin-bottom: 15px;
 }
 
 h3 {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: "Gaegu", sans-serif;
@@ -26,23 +26,46 @@ h3 {
     font-size: xx-large;
 }
 
-@media screen and (max-width: 768px) {
-    h3 {
-        font-size: x-large;
-    }
+p {
+    margin: 0;
+    margin-top: 20px;
+    color: red;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: large;
+}
 
-    a {
-        font-size: xx-large;
-    }
+button {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    cursor: pointer;
+    height: 40px;
+}
+
+button:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 @media screen and (max-width: 480px) {
-    h3 {
+
+    h3,
+    button {
         font-size: large;
     }
 
     a {
         font-size: x-large;
+    }
+
+    p {
+        font-size: smaller
     }
 }
 
@@ -55,9 +78,9 @@ a {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: xxx-large;
-  }
-  
-  .restart-button:hover {
+}
+
+.restart-button:hover {
     color: red;
     font-style: oblique;
-  }
+}

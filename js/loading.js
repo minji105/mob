@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   setTimeout(function () {
-    window.location.href = './testStart.html';
+    window.location.href = './main.html';
   }, 5000);
 });
 
