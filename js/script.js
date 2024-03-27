@@ -61,6 +61,3 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("mousemove", updateTextPosition);
 });
 
-function onSubmit() {
-      window.location.href = "enterCode.html";
-}
