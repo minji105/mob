@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           document.querySelector('.follow-text').textContent = mouseTexts[index];
+          document.querySelector('.scroll-indicator').textContent = mouseTexts[index];
           index++;
           currentQuestionIndex++;
         }
@@ -61,3 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("mousemove", updateTextPosition);
 });
 
+
+var scrollIndicator = document.querySelector('.scroll-indicator');
+
+scrollIndicator.style.display = 'block';
+
+window.addEventListener('scroll', function() {
+  scrollIndicator.style.top = 200 + 'px';
+});

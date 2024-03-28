@@ -38,13 +38,13 @@ h3 {
 
 @media screen and (max-width: 768px) {
     h3 {
-        font-size: large; 
+        font-size: large;
     }
 }
 
 @media screen and (max-width: 480px) {
     h3 {
-        font-size: medium; 
+        font-size: medium;
     }
 }
 
@@ -79,27 +79,27 @@ h3 {
 .buttons .no-button,
 .buttons1 .yes-button,
 .buttons1 .no-button {
-   width: 15%;
-   min-width: 70px;
-   cursor: pointer;
-   position: relative;
+    width: 15%;
+    min-width: 70px;
+    cursor: pointer;
+    position: relative;
 }
 
 .buttons .yes-button img,
 .buttons .no-button img,
 .buttons1 .yes-button img,
 .buttons1 .no-button img {
-   width: 100%;
-   position: absolute;
+    width: 100%;
+    position: absolute;
 }
 
 .buttons .yes-button .hover-yes,
 .buttons .no-button .hover-no {
-   opacity: 0;
+    opacity: 0;
 }
 
 .hover-yes,
-.hover-no{
+.hover-no {
     opacity: 0;
 }
 
@@ -118,6 +118,32 @@ h3 {
     font-weight: bold;
     position: absolute;
     color: #00e0e0;
-    pointer-events: none; /* 텍스트가 마우스 이벤트를 가로채지 않도록 합니다. */
+    pointer-events: none;
     z-index: 2;
+    opacity: 1;
+}
+
+.scroll-indicator {
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    top: 200px;
+    right: 5px;
+    background-color: rgba(75, 75, 75, 0.5);
+    color: #00e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+    display: none;
+    opacity: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .scroll-indicator {
+        opacity: 1;
+    }
+
+    .follow-text {
+        opacity: 0;
+    }
 }
