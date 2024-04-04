@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   answerButtons.forEach(function (answerButton) {
     answerButton.addEventListener('click', function () {
+      
+      answerButtons.forEach(function(button) {
+        button.style.pointerEvents = 'none';
+      });
+
       answerButton.classList.toggle('clicked');
+      answerButton.classList.add('hovered');
 
       if (answerButton.id === 'answer') {
         const nextQuestion = document.querySelector(`.question:nth-child(${currentQuestionIndex})`);
@@ -18,14 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
           buttons.forEach(function (button) {
             button.style.pointerEvents = 'auto';
           });
-
-          if (answerButton.classList.contains('yes-button')) {
-            answerButton.querySelector('.hover-yes').style.opacity = 1;
-            answerButton.style.pointerEvents='none';
-          } else if (answerButton.classList.contains('no-button')) {
-            answerButton.querySelector('.hover-no').style.opacity = 1;
-            answerButton.style.pointerEvents='none';
-          }
 
           document.querySelector('.follow-text').textContent = mouseTexts[index];
           document.querySelector('.scroll-indicator').textContent = mouseTexts[index];

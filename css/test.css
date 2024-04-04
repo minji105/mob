@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: black; */
     background-image: url('../imgs/background-gray.jpg');
 }
 
@@ -21,7 +20,7 @@ h1 {
     font-weight: bolder;
     font-style: normal;
     font-size: 70px;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 #000000,
         1px -1px 0 #000000,
         -1px 1px 0 #000000,
@@ -37,7 +36,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: black; */
     background-image: url('../imgs/background-faces.jpg');
     background-repeat: repeat-x repeat-y;
     border: solid rgb(0, 0, 0);
@@ -90,6 +88,18 @@ h3 {
     opacity: 0.5;
 }
 
+button {
+    font-family: "Gaegu", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 29px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 25%;
+    box-shadow: 2px 3px 0 #858585;
+    cursor: pointer;
+}
+
 .buttons1 {
     display: flex;
     flex-direction: row;
@@ -103,42 +113,16 @@ h3 {
     pointer-events: none;
 }
 
-.buttons .yes-button,
-.buttons .no-button,
-.buttons1 .yes-button,
-.buttons1 .no-button {
-    width: 15%;
-    min-width: 70px;
-    cursor: pointer;
-    position: relative;
-}
-
-.buttons .yes-button img,
-.buttons .no-button img,
-.buttons1 .yes-button img,
-.buttons1 .no-button img {
-    width: 100%;
-    position: absolute;
-}
-
-.buttons .yes-button .hover-yes,
-.buttons .no-button .hover-no {
-    opacity: 0;
-}
-
-.hover-yes,
-.hover-no {
-    opacity: 0;
-}
-
 .yes-button:hover .yes,
-.no-button:hover .no {
-    opacity: 0;
+.yes-button.clicked .yes,
+.no-button:hover .no,
+.no-button.clicked .no {
+    background: radial-gradient(circle, rgb(255, 59, 222), white);
 }
 
-.yes-button:hover .hover-yes,
-.no-button:hover .hover-no {
-    opacity: 1;
+button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
 }
 
 .follow-text {
@@ -146,7 +130,7 @@ h3 {
     font-weight: bold;
     position: absolute;
     color: #05f3f3;
-    text-shadow: 
+    text-shadow:
         -1.5px -1.5px 0 #777777,
         1.5px -1.5px 0 #777777,
         -1.5px 1.5px 0 #777777,
@@ -171,6 +155,13 @@ h3 {
     opacity: 0;
 }
 
+@media screen and (max-width: 768px) {
+    button {
+        font-size: 24px;
+        width: 80px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .scroll-indicator {
         opacity: 1;
@@ -178,5 +169,10 @@ h3 {
 
     .follow-text {
         opacity: 0;
+    }
+
+    button {
+        font-size: 17px;
+        width: 60px;
     }
 }
