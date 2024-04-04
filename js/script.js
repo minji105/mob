@@ -1,3 +1,11 @@
+function onSubmit() {
+    if (!event.target.closest('#answer')) {
+        window.location.href = './success.html';
+    } else {
+        window.location.href = './fail.html';
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const answerButtons = document.querySelectorAll('#answer');
   const mouseTexts = ['14%', '29%', '43%', '57%', '71%', '86%'];
@@ -7,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   answerButtons.forEach(function (answerButton) {
     answerButton.addEventListener('click', function () {
-      
+
       answerButtons.forEach(function(button) {
         button.style.pointerEvents = 'none';
       });
