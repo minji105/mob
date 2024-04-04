@@ -1,5 +1,5 @@
 function onSubmit() {
-    if (!event.target.closest('#answer')) {
+    if (event.target.closest('#answer')) {
         window.location.href = './success.html';
     } else {
         window.location.href = './fail.html';
