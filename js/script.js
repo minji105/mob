@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const answerButtons = document.querySelectorAll('#answer');
-  const mouseTexts = ['25%', '50%', '75%'];
+  const mouseTexts = ['14%', '29%', '43%', '57%', '71%', '86%'];
 
   let index=0;
   let currentQuestionIndex = 2;
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let newX = startX + dx;
       let newY = startY + dy;
 
-      followText.style.left = newX + "px";
-      followText.style.top = newY + "px";
+      followText.style.left = newX + 3 + "px";
+      followText.style.top = newY + 3 + "px";
 
       requestAnimationFrame(updateTextPosition); 
   }

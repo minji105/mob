@@ -1,3 +1,3 @@
 function onSubmit() {
-    window.location.href = "enterCode.html";
+    window.location.href = "../html/enterCode.html";
 }

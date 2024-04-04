@@ -50,9 +50,9 @@ h5 {
     font-size: x-large;
 }
 
-a{
+a {
     text-decoration: none;
-  color: inherit;
+    color: inherit;
 }
 
 .mob-face {
@@ -92,7 +92,8 @@ label {
         font-size: large;
     }
 
-    h5, a {
+    h5,
+    a {
         font-size: medium;
     }
 
